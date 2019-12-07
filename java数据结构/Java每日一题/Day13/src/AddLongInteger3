@@ -1,0 +1,112 @@
+//方法3：由于在Java中String的不可变性，导致下边出现了问题
+//不过我们可以写C++的代码来解决这个问题（按照下面的思路）
+/**
+import java.util.Scanner;
+public class AddLongInteger3 {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        String b=input.next();
+        String c=input.next();
+        System.out.println(Add(b,c));
+    }
+
+    private static String Add(String b, String c) {
+        String sb="";
+        String sc="";
+        if(b.length()>c.length()){
+            for(int i=0;i<b.length()-c.length();i++){
+                sc+='0';
+            }
+            sc+=c;
+        }
+        if(b.length()<c.length()){
+            for(int i=0;i<c.length()-b.length();i++){
+                b+='0';
+            }
+            sb+=b;
+        }
+        int flag=0;
+        for(int i=b.length()-1;i>=0;i--){
+            int tmp=(b.charAt(i)-'0')+(sc.charAt(i)-'0')+flag;
+            if(tmp>9){
+                flag=1;
+                b.charAt(i)= (char) (tmp%10+'0'); (在这里出现了问题，无法进行直接赋值)
+            }else{
+                flag=0;
+                b.charAt(i)= (char) (tmp+'0'); (在这里出现了问题，无法进行直接赋值)
+            }
+        }
+        if(flag==1){
+            b="1"+b;
+        }
+        return b;
+    }
+}
+
+*/
+//这里是c++的代码
+/**
+#include<stdlib.h>
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+        int main()
+        {
+        string str1;
+        string str2;
+        string shortstr;  //用来存长度比较短的那个字符串
+        string longstr;  //用来存长度比较长的那个字符串
+        string result = "";
+        while (cin >> str1 >> str2)
+        {
+        int flag = 0; //是否需要进位的标志位
+        if (str1.size() > str2.size())
+        {
+        //先把shortstr存str1和str2长度相差的0
+        for (int i = 0; i < str1.size() - str2.size(); i++)
+        {
+        shortstr += "0";
+        }
+        shortstr += str2; //然后这里后边再加上短的字符串，这样就把两个str给对齐了
+        longstr = str1;
+        }
+        else  //这里同上所述
+        {
+        for (int i = 0; i < str2.size() - str1.size(); i++)
+        {
+        shortstr += "0";
+        }
+        shortstr += str1;
+        longstr = str2;
+        }
+        //加的时候是逆序加的，符合我们从小的竖式加法习惯
+        for (int i = longstr.size() - 1; i >= 0; i--)
+        {
+        int temp;
+        //因为这里每次取出来的是字符，要减去‘0’才能变为int型的数字
+        temp = (longstr[i] - '0') +( shortstr[i] - '0') + flag; //加上标志位（以防有进位操作）
+        if (temp / 10) //如果相加的值大于10，那么就对temp取余，把余数放到长字符串原位置，并向前进一位
+        {
+        flag = 1;
+        longstr[i] = temp % 10 + '0'; //这里在把算出来的int型的数字变回char放进对应的下标处
+        }
+        else //如果相加的值小于10，那么直接存进去就好
+        {
+        flag = 0;
+        longstr[i] = temp + '0';
+        }
+        }
+        if (flag)  //这里是最后是否需要进位的标志位，例如：99+1，需要增加一位，变成3位的100，所以需要在结果前面加个1
+        {
+        string add = "1";
+        longstr = add + longstr;
+        }
+        cout << longstr << endl;
+        longstr.clear();
+        shortstr.clear();
+        }
+        system("pause");
+        return 0;
+        }
+*/

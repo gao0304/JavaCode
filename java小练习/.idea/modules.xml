@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/C语言作业（java版）/C语言作业（java版）.iml" filepath="$PROJECT_DIR$/C语言作业（java版）/C语言作业（java版）.iml" />
+      <module fileurl="file://$PROJECT_DIR$/书籍的排序/书籍的排序.iml" filepath="$PROJECT_DIR$/书籍的排序/书籍的排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/平时小练习代码/平时小练习代码.iml" filepath="$PROJECT_DIR$/平时小练习代码/平时小练习代码.iml" />
+      <module fileurl="file://$PROJECT_DIR$/泛型类/泛型类.iml" filepath="$PROJECT_DIR$/泛型类/泛型类.iml" />
+    </modules>
+  </component>
+</project>
