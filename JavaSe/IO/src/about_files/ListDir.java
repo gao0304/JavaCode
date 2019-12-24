@@ -1,4 +1,4 @@
-//写一个函数：输出它目录下的所有文件
+package about_files;//写一个函数：输出它目录下的所有文件
 import java.io.File;
 public class ListDir {
     //但是这个函数还有一点没有完善：就是电脑上的有些文件无权限访问造成空指针异常错误
