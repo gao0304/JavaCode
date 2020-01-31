@@ -1,0 +1,36 @@
+1.SimpleHTTPServer：
+   建立TCP相关的代码，等待客户端进行连接
+2.Task:处理一个HTTP完整的请求
+   1.读取并解析请求
+   2.根据不同的URL，调用不同的servlet.doGet方法
+   3.组装并发送响应
+   4.close
+3.Request：1.请求对象  2.解析请求
+  //用GET/login?username=gaofeng&age=18&sex=男 HTTP/1.1\r\n
+  里边的method:GET  （方法）
+       path:login   （路径）
+       version:HTTP 1.1   （版本）
+       parameters:{username=gaofeng  age=18  sex=男}  （参数）
+       headers:Host:127.0.0.1\r\n  各种请求头\r\n  （请求头）
+  Request.parse
+        parseLine  解析请求行
+           parseUrl  解析路径（拆分路径和拆分queryString）
+        parseHeaders  解析请求头
+4.Response：1.响应对象  2.组装发送
+  响应对象：
+     （1）status:200 OK之类的
+     （2）headers：{key1=value1,key2=value2...}
+          就是Content-Length: 19
+             Content-Type: text/html; charset=utf-8
+             Set-Cookie: username=ss 之类的
+     （3）bodyBuilder：存储正文body部分
+5.HTTPServlet(抽象类)
+    doGet（请求对象，响应对象）:实现不同的响应
+    1.设置状态码
+    2.设置Content-Type
+    3.设置其他响应头
+    4.写body正文
+6.Content-Type:
+    text/html  :html格式
+    text/plain :裸文本格式
+    application/javascript:js脚本

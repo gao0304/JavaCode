@@ -1,0 +1,36 @@
+1.v1,v2版本需要注意的地方：
+  1.解析请求行时：
+   （1）如何解析出query String部分（参数部分）
+   （2）如何进行的url解码
+  2.Response类的writeAndFlush
+    (1)如何进response组装的
+    (2)如何写入
+  3.Task.run如何根据不同的url,进入到不同的HTTPServer中处理调用doGet方法
+
+2.总体流程：
+           TCP-->HTTP-->业务
+ 对应的代码：socket-->Task/Request/Response-->HttpServlet/JokeJSServlet
+
+3.注意的点：
+  （1）如果看到浏览器报错：连接被拒绝/TCP无法建立连接：
+      1、检查ip是不是错的  2、检查端口是否正确
+  （2）启动的时候address already used,显示端口被占用
+      1、检查之前的进程是不是没有关闭 2、看是不是有其他的进程占用了这个端口
+  （3）访问URL的时候如何指定端口：http://127.0.0.1:80/
+  （4）如何查看端口被什么进程占用：在cmd里运行命令 netstat -nao | findstr 端口号
+                               然后会发现占用这个端口的进程的PID，打开任务管理器进程查找对应的进程
+
+4.cookie：
+  1.cookie机制
+  （1）第一次访问网站并登陆后：服务器的响应头中会带着一个Set-Cookie头（种Cookie），里边有客户端登陆的个人信息
+  （2）客户端收到响应头后做两件事：1.本地保存Cookie（以key=value的形式） 2.以后再访问这个网站时(包括它的子域名)请求头就会带着cookie
+  （3）这样服务器就知道是谁谁谁来了
+  2.cookie有效期
+  （1）比如我们先开始没有设置时，cookie是会话级别的有效期，当浏览器关闭之后就没有了
+  （2）Set-Cookie时可以设置过期时间
+  3.Cookie是保存在浏览器本地文件夹下的
+  4.Cookie的短处：Cookie是保存在本地的文件夹下的，可能会被恶意修改
+    解决办法：（1）将Cookie加密  （2）将一些不敏感的信息种到Cookie中，将敏感信息存到session
+5.Session
+ 1.理解：以key-value存储信息的一种服务器
+
