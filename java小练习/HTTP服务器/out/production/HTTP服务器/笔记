@@ -1,0 +1,23 @@
+1.解析请求行时
+   1.如何解析出query string部分（参数部分）
+   2.如何进行的URL解码（为什么要URL解码）
+2.Response类的writeAndFlush
+   1.如何进行response组装的
+   2.如何写入
+3.Task.run如何根据不同的URL，进入到不同的HTTPServeLet中处理调用doGet方法
+
+总体流程
+     TCP-->HTTP-->业务
+对应：socket-->Task/Request/Response-->HttpServeLet/JokeJSServeLet
+
+错误类型：
+   1.如果看到浏览器报错：连接被拒绝
+   TCP无法建立连接
+     1.ip是错误的
+     2.端口是错误的
+   2.启动的时候address already used，端口被占用
+     1.之前的进程没有关闭
+     2.有其他的进程已经占用了这个端口
+   3.访问的URL
+
+
