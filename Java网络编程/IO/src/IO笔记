@@ -1,0 +1,25 @@
+1.输入源可能会有很多
+2.整个数据流上会有各种各样的加工厂（一个个的对象）
+
+绝对路径：从根路径下开始写一直走到这个文件
+相对路径：相对当前路径的一个路径（相对当前程序进程进程的工作路径）
+java中一般无法修改，如果通过其他语言是可以修改工作路径的
+
+FileInputStream是读文件    FileOutputStream 是写文件
+当read()!=-1,就乐意继续读   ，可以用字符集String(buf,off,len,"UTF-8")来输出
+读写时有不同的源
+FileInputStream    源是文件内容
+ByteArrayInputStream  源是内存中的一段byte[]
+
+进程被启动的时候，默认都带有三个流
+1.标准输入   System.in   键盘
+2.标准输出   System.out  屏幕
+3.标准错误   system.err  屏幕
+
+IO比较关键的点：
+1.输入源和最终的输出都是字节形式的
+2.路径：相对路径和绝对路径
+3.流的分类：
+      文件流/网络流
+      字节流：InPutStream/OutPutStream
+      字符流：Reader/Writer
