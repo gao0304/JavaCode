@@ -1,3 +1,5 @@
+package Others;
+
 public class AboutArray {
     public static void main(String[] args){
     double[][] m = {{1.5, 2, 3, 4}, {5.5, 6, 7, 8}, {9.5, 1, 3, 1}};

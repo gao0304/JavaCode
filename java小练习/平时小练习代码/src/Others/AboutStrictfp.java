@@ -1,3 +1,5 @@
+package Others;
+
 strictfp class AboutStrictfp {
     private static double aDouble = 0.05522222222233212d;
     private static float aFloat = 033311113334410222f;
