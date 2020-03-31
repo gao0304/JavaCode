@@ -1,5 +1,6 @@
 package Sort;
 
+//归并排序：时间复杂度：O(n*log2N),空间复杂度O（n）,稳定性：稳定
 public class MergeSort {
     public static void mergeSort(int[] array){
         mergeSortInternal(array,0,array.length-1);

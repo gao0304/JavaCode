@@ -2,7 +2,7 @@ package Sort;
 
 public class ShellSort {
 
-    //希尔排序：通过分组对插排的优化
+    //希尔排序：通过分组对插排的优化，时间复杂度：最好O(n)，最坏O(n^2)，空间复杂度：O(1)
     public static void shellSort(int[] array){
         int[] drr={5,3,1}; //暂定分组为5组，3组，1组（最后一次进行直接插入排序）
         for(int i=0;i<drr.length;i++){

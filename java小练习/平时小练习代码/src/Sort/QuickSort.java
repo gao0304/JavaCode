@@ -2,7 +2,7 @@ package Sort;
 
 import java.util.Arrays;
 
-//快速排序（时间复杂度为O（nlogN），空间复杂度为O(n)，稳定性：不稳定）
+//快速排序（时间复杂度为O（nlog2N），空间复杂度为O(n)，稳定性：不稳定
 public class QuickSort {
     public static void quickSort(int[] array){
         quick(array,0,array.length-1);
