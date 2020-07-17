@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--创建一个字符串对象，对象名为myName.通过new String("小比特")生成对象-->
+    <bean id="myName" class="java.lang.String">
+        <constructor-arg value="小比特" /> <!--通过构造方法设置的属性 -->
+    </bean>
+
+    <!--无参的构造方法创建对象-->
+    <!--如果构造方法是有参的，则需要显式的通过constructor-arg name="xxx" value="xxx"来调用它的构造方法去改变属性的值-->
+    <bean id="duck" class="gaofeng.ioc.Duck">
+        <!--<property name="name" value="MuDuck" />-->
+        <property name="name" ref="myName" />
+        <!--这里的ref可以对上边的id="myName" 创建一个引用，输出的时候就会输出小比特-->
+        <property name="age" value="20" />
+    </bean>
+
+
+
+    <bean id="duck1" class="gaofeng.ioc.Duck">
+        <property name="name" ref="myName" />
+        <property name="age" value="20" />
+    </bean>
+
+    <bean id="duck2" class="gaofeng.ioc.Duck">
+        <property name="name" value="MuDuck" />
+        <property name="age" value="30" />
+    </bean>
+
+    <!--<bean id="duckShop" class="gaofeng.ioc.DuckShop">-->
+    <!--scope="singleton是"单例模式，使用 singleton 定义的 Bean 在 Spring 容器中只有一个实例，这也是 Bean 默认的作用域-->
+    <bean id="duckShop" class="gaofeng.ioc.DuckShop " scope="prototype">
+    <!--scope="prototype是使用原型模式，每次通过 Spring 容器获取 prototype 定义的 Bean 时，容器都将创建一个新的 Bean 实例。 -->
+        <property name="name" value="烤鸭店"/>
+        <property name="ducks">
+            <list>
+                    <ref bean="duck1" />
+                    <ref bean="duck2" />
+            </list>
+        </property>
+    </bean>
+    <bean id="lifeCycle" class="gaofeng.ioc.Lifecycle" />
+
+    <!--<bean id="lifeCycle" class="gaofeng.ioc.Lifecycle" init-method="XXX" destroy-method="XXX"/>-->
+    <!--这里的init-method="XXX" destroy-method="XXX"Bean的初始化和销毁方法可以调用我们用户自定义的方法，需要在Lifecycle中自定义-->
+
+    <!--
+        扫描base-package的包，所有的子包都会进行扫描：包含Spring注解的类有：
+            1.@Controller:做前端请求处理的类
+            2.@Service:业务处理的类
+            3.@Component:宽泛的概念，一般指组件
+            4.@Repository:一般数据操作的类
+            5.@Configyration:配置类
+        -->
+    <context:component-scan base-package="gaofeng.scan" />
+
+    <!--实例化的工厂创建bean对象-->
+    <bean id="duckFactory" class="gaofeng.ioc.DuckFactory" />
+    <bean id="duck5" class="gaofeng.ioc.Duck" factory-bean="duckFactory" factory-method="create"/>
+
+    <!--静态工厂方法创建Bean对象，类型是方法的返回值类型，而不是DuckFactory的类型-->
+    <bean id="duck6" class="gaofeng.ioc.DuckFactory" factory-method="create2" />
+
+</beans>

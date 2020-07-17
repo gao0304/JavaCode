@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 定义Bean对象,但是使用的时候一定要基于类的无参构造方法来实现（默认是无参构造方法实现的）-->
+    <!-- property:<bean>元素的子元素，用于调用 Bean 实例中的 Set 方法完成属性赋值，从而完成依赖注入。
+        该元素的 name 属性指定 Bean 实例中的相应属性名-->
+    <bean id="duck1" class="frank.model.Duck">
+        <property name ="name" value="LadyGaga"/>
+        <property name = "age" value="10"/>
+    </bean>
+
+    <!-- 通过有参的构造方法定义Bean对象
+        constructor-arg:<bean>元素的子元素，可以使用此元素传入构造参数进行实例化-->
+    <bean id="duck2" class="frank.model.Duck">
+        <constructor-arg name="name" value="烤鸭"/>
+        <constructor-arg name="age" value="2"/>
+    </bean>
+
+    <!-- 引用已有的Bean对象：ref -->
+    <!-- ref:<property> 和 <constructor-arg> 等元素的子元索，
+        该元素中的 bean 属性用于指定对 Bean 工厂中某个 Bean 实例的引用-->
+    <bean id="duckShop" class="frank.model.DuckShop">
+        <property name="ducks">
+            <list>
+                <ref bean="duck1"/>
+                <ref bean="duck2"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 直接引用先创建好的Bean对象 -->
+    <bean id ="p1" class="frank.model.Person">
+        <property name="duck" ref="duck1"/>
+    </bean>
+
+    <!-- 通过静态方法实例化对象 -->
+    <bean id="duck3" class="frank.model.DuckFactory" factory-method="create"/>
+
+    <!--通过实例工厂方式实例化Bean对象-->
+    <!-- 配置实例工厂 -->
+    <bean id="DuckFactory" class="frank.model.DuckFactory"/>
+    <!-- factory-bean属性指定一个实例工厂，factory-method属性确定使用工厂中的哪个方法 -->
+    <bean id="duck5" factory-bean="DuckFactory" factory-method="create2"/>
+
+    <!-- 验证Spring Bean的声明周期-->
+    <bean id ="test" class="frank.model.Test" init-method="init"/>
+</beans>
