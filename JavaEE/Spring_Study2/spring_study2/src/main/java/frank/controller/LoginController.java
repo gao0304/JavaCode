@@ -1,9 +1,13 @@
 package frank.controller;
 
 import frank.model.User;
+import frank.service.LoginService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -13,8 +17,24 @@ import java.util.Date;
 @RequestMapping("/1")
 public class LoginController {
 
+//    @Autowired
+    @Resource
+    private LoginService loginService; //将LoginService注册到容器中
+
+    //用两种形式将User的对象装配Bean容器中
+    @Autowired
+    @Qualifier("user1") //指定注册的bean对象
+    private User user1;
+
+    @Resource(name = "user3") //也是指定注册的bean对象，但是写的形式与 @Qualifier不同
+    private User user3;
+
+    //演示登录参数不同时的现象
     @RequestMapping(value = "/login")
     public String login(Integer i){
+        System.out.println(loginService);
+        System.out.println(user1);
+        System.out.println(user3);
         if(i==1){
             return "redirect:/index.html";  //进行重定向
         }else {
@@ -61,7 +81,7 @@ public class LoginController {
     public Object login4(User u){
         System.out.println(u);
         User user =new User();
-        user.setUsername("你好");
+        user.setUsername("你好啊啊");
         user.setPassword("123");
         user.setBirthday(new Date());
         return user;
@@ -92,6 +112,18 @@ public class LoginController {
             return user;
         }
        throw new RuntimeException("登录不成功");
+    }
+
+    //演示@PathVariable可以返回请求路径中的映射
+    @RequestMapping(value = "/{type}/login7",method = RequestMethod.POST)
+    @ResponseBody
+    public Object login7(@PathVariable("type") String type){
+        System.out.println(type);
+        User user =new User();
+        user.setUsername("你好宿舍");
+        user.setPassword("123");
+        user.setBirthday(new Date());
+        return user;
     }
 }
 

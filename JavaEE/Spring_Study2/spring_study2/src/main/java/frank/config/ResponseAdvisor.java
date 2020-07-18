@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
-@ControllerAdvice
+@ControllerAdvice  //响应数据的封装
 public class ResponseAdvisor implements ResponseBodyAdvice {
 
     @Override

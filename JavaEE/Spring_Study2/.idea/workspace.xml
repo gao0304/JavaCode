@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbc2912b-7c88-48b8-b77f-73c6bb1f3831" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_study2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_study2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_study2/spring_study2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_study2/spring_study2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ResponseAdvisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ResponseAdvisor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_study2/src/main/java/frank/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_study2/src/main/java/frank/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_study2/target/classes/frank/config/MyConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring_study2/target/classes/frank/config/MyConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_study2/target/classes/frank/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring_study2/target/classes/frank/controller/LoginController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring_study/target/" />
     <ignored path="$PROJECT_DIR$/spring_study2/target/" />
@@ -15,7 +21,104 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdkService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/example/proxy/jdk/JdkService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdkServiceProxy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/example/proxy/jdk/JdkServiceProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/example/proxy/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IJdkService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/example/proxy/jdk/IJdkService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseAdvisor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ResponseAdvisor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/MyConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/service/LoginService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,6 +129,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cg</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -35,6 +141,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="work" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -47,19 +158,21 @@
         <option value="$PROJECT_DIR$/spring_study/src/main/java/frank/Main.java" />
         <option value="$PROJECT_DIR$/spring_study/src/main/resources/applications.xml" />
         <option value="$PROJECT_DIR$/spring_study/src/main/java/frank/model/Test.java" />
-        <option value="$PROJECT_DIR$/spring_study2/pom.xml" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/Application.java" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/model/User.java" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/resources/public/login.html" />
-        <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/MyConfig.java" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/resources/public/error.html" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ExceptionAdvisor.java" />
-        <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/model/Response.java" />
         <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ResponseAdvisor.java" />
+        <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/service/MyService.java" />
+        <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/spring_study2/src/main/java/frank/config/MyConfig.java" />
+        <option value="$PROJECT_DIR$/spring_study2/pom.xml" />
       </list>
     </option>
   </component>
@@ -92,13 +205,15 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="560" />
     <option name="y" value="71" />
     <option name="width" value="999" />
     <option name="height" value="754" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="PackagesPane" proportions="" version="1">
       <flattenPackages ProjectPane="false" />
@@ -110,69 +225,41 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
               <item name="Spring_Study2" type="58d84e3e:PackageViewProjectNode" />
               <item name="spring_study2" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_study" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="frank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="frank" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring_Study2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring_study2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,13 +349,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitCode\Java-Code\JavaEE\Spring_Study2\spring_study2\src\main\java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -378,14 +470,17 @@
       <workItem from="1594949247584" duration="2148000" />
       <workItem from="1594963851277" duration="700000" />
       <workItem from="1594973248857" duration="1136000" />
+      <workItem from="1594980471852" duration="1626000" />
+      <workItem from="1595035583680" duration="9591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49285000" />
+    <option name="totallyTimeSpent" value="60502000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -399,15 +494,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" x="127" y="207" width="1067" height="396" id="Run" order="2" type="FLOATING" weight="0.32993197" />
+      <window_info anchor="bottom" x="116" y="213" width="1067" height="396" id="Run" order="2" type="FLOATING" weight="0.32993197" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32993197" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17431192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2148318" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="7" />
@@ -417,7 +513,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -430,11 +525,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/model/User.java" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/resources/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/resources/public/login.html" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/Application.java" />
-    <entry file="file://$PROJECT_DIR$/spring_study/pom.xml" />
     <entry file="file://$PROJECT_DIR$/spring_study2/pom.xml" />
     <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/controller/LoginController.java" />
     <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/Application.java" />
@@ -473,20 +563,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring_study2/pom.xml" />
     <entry file="file://$PROJECT_DIR$/spring_study/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/Application.java" />
     <entry file="file://$PROJECT_DIR$/spring_study2/src/main/resources/public/login.html" />
     <entry file="file://$PROJECT_DIR$/spring_study2/src/main/resources/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/model/User.java" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/spring_study2/src/main/resources/public/error.html" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/controller/LoginController.java" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/model/Response.java" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ResponseAdvisor.java" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/MyConfig.java" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/LoginInterceptor.java" />
-    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ExceptionAdvisor.java" />
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/model/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ExceptionAdvisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/MyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/config/ResponseAdvisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/frank/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/example/proxy/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/example/proxy/jdk/IJdkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/example/proxy/jdk/JdkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_study2/src/main/java/example/proxy/jdk/JdkServiceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
