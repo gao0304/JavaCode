@@ -42,7 +42,7 @@ public class MyConfig implements WebMvcConfigurer {
     //假如要使用其他的一些bean对象（这里假如是user1），怎么设置到当前的user3里取呢？看下边的写法
     @Bean
     public User user3(@Qualifier("user1") User user1){
-        System.out.println(user1);
+//        System.out.println(user1);
         User user =new User();
         user.setUsername("你好啊3号，我借用了一下1号bean对象");
         user.setPassword("123");
